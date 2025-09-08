@@ -76,7 +76,13 @@
 			description: 'SV-Chat is a chat tool i developed alongside a friend',
 			image: 'https://i.ibb.co/F4J4XmBK/logo.png',
 			url: 'https://github.com/Redveil-SVchat/SVchat'
-		}
+		},
+		{
+			name: 'Placeholder',
+			description: 'Placeholder',
+			image: 'https://i.ibb.co/xtfLyW2M/placeholder-1024x1024.png',
+			url: ''
+		},
 		
 	];
 	const services = [
