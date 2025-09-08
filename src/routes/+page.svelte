@@ -129,6 +129,7 @@
 	<div class="flex flex-1 items-center justify-center px-4 md:px-6">
 		<div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
 			<div class="flex flex-col justify-center space-y-4">
+				<img src="https://i.ibb.co/G4Pg6r4H/img.png" alt="test" width="200px" height="200px" style="border-radius: 50%;">
 				<div class="space-y-2">
 					<h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
 						Mats Dale Soma
@@ -139,8 +140,8 @@
 					</p>
 				</div>
 				<div class="flex flex-col gap-2 min-[640px]:flex-row">
-					<Button>Se prosjekt</Button>
-					<Button variant="outline">Kontakt</Button>
+					<Button href="#projects">Se prosjekt</Button>
+					<Button variant="outline" href="#contact">Kontakt</Button>
 				</div>
 				<div class="flex space-x-4 self-center sm:self-start">
 					{#each icon_links as icon_link}
@@ -222,7 +223,7 @@
 		</div>
 	</div>
 </section>
-<section class="py-12">
+<section class="py-12" id="contact">
 	<div class="container mx-auto max-w-md px-4">
 		<Card.Root>
 			<Card.Header>
