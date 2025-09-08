@@ -20,7 +20,7 @@
 	const icon_links = [
 		{
 			label: 'GitHub',
-			url: 'https://github.com/spit-fires',
+			url: 'https://github.com/r3disme',
 			icon: Github
 		},
 		{
@@ -30,7 +30,7 @@
 		},
 		{
 			label: 'Email',
-			url: '',
+			url: 'mailto:mats@soma.nu',
 			icon: Mail
 		}
 	];
@@ -61,94 +61,34 @@
 			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg'
 		},
 		{
-			name: 'Fastapi',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg'
-		},
-		{
 			name: 'Sveltekit',
 			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg'
 		},
 		{
-			name: 'MongoDB',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg'
-		},
-		{ name: 'Pocketbase', icon: 'https://avatars.githubusercontent.com/u/101000011?s=200&v=4' },
-		{
-			name: 'Tailwind',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'
-		},
-		{
 			name: 'Git',
 			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg'
-		},
-		{
-			name: 'XML',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg'
-		},
-		{
-			name: 'SQLite',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg'
-		},
-		{
-			name: 'Discord.js',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/discordjs/discordjs-original.svg'
-		},
-		{ name: 'Pycord', icon: 'https://pycord.dev/_next/static/media/logo.2762350e.png' }
+		}
 	];
 
 	const Projects = [
 		{
-			name: 'Openimagery',
-			description: 'Fully free API for generating AI images. Supports multiple styles and models.',
-			image: 'https://i.postimg.cc/8PzF6B6M/image.png',
-			url: 'https://github.com/OpenImagery/docs'
-		},
-		{
-			name: 'Pawnbadges-SCP',
-			description: 'A rimworld mod that adds SCP themed badges to the game.',
-			image:
-				'https://raw.githubusercontent.com/Spit-fires/pawnbadges-scp/refs/heads/main/About/Preview.png',
-			url: 'https://github.com/Spit-fires/pawnbadges-scp'
-		},
-		{
-			name: 'Linked',
-			description:
-				'A web application that allows users to create and share their own social media links in a single page.',
-			image: 'https://i.postimg.cc/J0947HDT/image.png',
-			url: ''
+			name: 'SV-Chat',
+			description: 'SV-Chat is a chat tool i developed alongside a friend',
+			image: 'https://i.ibb.co/F4J4XmBK/logo.png',
+			url: 'https://github.com/Redveil-SVchat/SVchat'
 		}
+		
 	];
 	const services = [
 		{
 			icon: Code,
-			title: 'Web Development',
-			description: 'Creating responsive and performant web applications using modern technologies.'
-		},
-		{
-			icon: Laptop,
-			title: 'Desktop App Development',
-			description: 'Building desktop applications for Windows, macOS, and Linux.'
-		},
-		{
-			icon: Smartphone,
-			title: 'Mobile App Development',
-			description: 'Building cross-platform mobile applications for iOS and Android.'
-		},
-		{
-			icon: Bot,
-			title: 'Bot Development',
-			description: 'Creating Discord bots for your server with custom features.'
-		},
-		{
-			icon: User,
-			title: 'Consulting',
-			description:
-				'Providing consulting services for your projects and helping you make the right decisions.'
+			title: 'Nettside Koding',
+			description: 'Jeg kan hjelpe med å lage en nettside til deg eller din bedrift.'
 		},
 		{
 			icon: Bug,
-			title: 'Bug Hunting & Fixing',
-			description: 'Fixing bugs and issues in your applications to make them more stable.'
+			title: 'Bug Hunting & fiksing',
+			description: 'Finne og fikse bugs i koden din'
 		}
 	];
 	let formData = {
@@ -165,7 +105,7 @@
 		isSubmitting = true;
 
 		// send form data to backend via post request
-    const url = 'https://formspree.io/f/xgvwjpdr';
+    const url = 'https://formspree.io/f/mldwaagb';
     const response = await fetch(url, {
       method: 'POST',
       headers: {
@@ -185,18 +125,16 @@
 			<div class="flex flex-col justify-center space-y-4">
 				<div class="space-y-2">
 					<h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-						Fahad Hossain
+						Mats Dale Soma
 					</h1>
-					<p class="text-xl">Software Engineer</p>
+					<p class="text-xl">Student</p>
 					<p class="max-w-[600px] md:text-xl">
-						Passionate about creating efficient, scalable, and user-friendly applications.
-						Specializing in full-stack development with expertise in Sveltekit, Python, and cloud
-						technologies.
+						Jeg er en 16 år gammel student ved Gand VGS som driver med koding på fritid.
 					</p>
 				</div>
 				<div class="flex flex-col gap-2 min-[640px]:flex-row">
-					<Button>View Projects</Button>
-					<Button variant="outline">Contact</Button>
+					<Button>Se prosjekt</Button>
+					<Button variant="outline">Kontakt</Button>
 				</div>
 				<div class="flex space-x-4 self-center sm:self-start">
 					{#each icon_links as icon_link}
@@ -214,7 +152,7 @@
 <section id="technologies" class="mx-8">
 	<Card.Root class="mx-auto w-full">
 		<Card.Header>
-			<Card.Title class="text-center text-2xl font-bold">Technologies I Know</Card.Title>
+			<Card.Title class="text-center text-2xl font-bold">Kodespråk jeg kan</Card.Title>
 		</Card.Header>
 		<Card.Content>
 			<ul class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
@@ -232,7 +170,7 @@
 </section>
 <br />
 <section id="projects" class="">
-	<h2 class="text-center text-2xl font-bold">Notable Projects</h2>
+	<h2 class="text-center text-2xl font-bold">Utvalgte prosjekter</h2>
 	<br />
 	<Carousel.Root class="mx-auto w-full max-w-72 md:max-w-lg">
 		<Carousel.Content>
@@ -248,7 +186,7 @@
 							<p>{project.description}</p>
 						</Card.Content>
 						<Card.Footer>
-							<Button href={project.url} class="mx-auto">View Project</Button>
+							<Button href={project.url} class="mx-auto">Mer info</Button>
 						</Card.Footer>
 					</Card.Root>
 				</Carousel.Item>
@@ -260,7 +198,7 @@
 </section>
 <section class="py-12" id="services">
 	<div class="container mx-auto px-4">
-		<h2 class="mb-8 text-center text-3xl font-bold">My Services</h2>
+		<h2 class="mb-8 text-center text-3xl font-bold">Mine Tjenester</h2>
 		<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
 			{#each services as service, index}
 				<Card.Root class="transition-all duration-300 hover:shadow-lg">
@@ -282,36 +220,36 @@
 	<div class="container mx-auto max-w-md px-4">
 		<Card.Root>
 			<Card.Header>
-				<Card.Title class="text-center text-2xl font-bold">Contact Me</Card.Title>
+				<Card.Title class="text-center text-2xl font-bold">Kontakt meg</Card.Title>
 				<Card.Description class="text-center">
-					Fill out the form below to get in touch with me.
+					Fyll ut skjema under for å kontakte meg.
 				</Card.Description>
 			</Card.Header>
 			<form>
 				<Card.Content class="space-y-4">
 					<div class="space-y-2">
-						<Label for="name">Name</Label>
-						<Input id="name" name="name" placeholder="Your name" bind:value={formData.name} required />
+						<Label for="name">Navn</Label>
+						<Input id="name" name="name" placeholder="Ditt navn" bind:value={formData.name} required />
 					</div>
 					<div class="space-y-2">
-						<Label for="email">Email</Label>
-						<Input id="email" name="email" type="email" placeholder="Your email" bind:value={formData.email} required />
+						<Label for="email">Epost</Label>
+						<Input id="email" name="email" type="email" placeholder="Din Epost" bind:value={formData.email} required />
 					</div>
 					<div class="space-y-2">
-						<Label for="subject">Subject</Label>
-						<Input id="subject" name="subject" placeholder="Subject" bind:value={formData.subject} required />
+						<Label for="subject">Titel</Label>
+						<Input id="subject" name="subject" placeholder="Titel" bind:value={formData.subject} required />
 					</div>
 					<div class="space-y-2">
-						<Label for="message">Message</Label>
-						<Textarea id="message" name="message" placeholder="Your message" bind:value={formData.message} required />
+						<Label for="message">Inhold</Label>
+						<Textarea id="message" name="message" placeholder="Inhold" bind:value={formData.message} required />
 					</div>
 				</Card.Content>
 				<Card.Footer>
 					<Button class="w-full" type="submit" disabled={isSubmitting} on:click={handleSubmit}>
 						{#if isSubmitting}
-							"Sending..."
+							"Sender..."
 						{:else}
-							Send Message
+							Send Meldning
 							<Send class="ml-2 h-4 w-4" />
 						{/if}
 					</Button>
@@ -321,5 +259,5 @@
 	</div>
 </section>
 <footer class="py-8 text-center w-full border-2">
-  <p>&copy; 2024 Fahad Hossain. All rights reserved.</p>
+  <p>&copy; 2025 Mats Dale Soma. All rights reserved.</p>
 </footer>

@@ -22,9 +22,9 @@
     });
 
     const navItems = [
-        { label: "Technologies", href: "#technologies" },
-        { label: "Projects", href: "#projects" },
-        { label: "Services", href: "#services" },
+        { label: "technologies", href: "#technologies" },
+        { label: "projects", href: "#projects" },
+        { label: "services", href: "#services" },
     ];
 </script>
 
@@ -49,13 +49,13 @@
         </div>
         <nav class="ml-auto flex gap-4 sm:gap-6">
             <a class="text-sm font-medium hover:underline underline-offset-4" href="#technologies">
-            Technologies
+            Teknologier
             </a>
             <a class="text-sm font-medium hover:underline underline-offset-4" href="#projects">
-            Projects
+            Prosjekter
             </a>
             <a class="text-sm font-medium hover:underline underline-offset-4" href="#services">
-            Services
+            Tjenester
             </a>
         </nav>
     </header>
