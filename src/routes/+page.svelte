@@ -73,7 +73,7 @@
 	const Projects = [
 		{
 			name: 'SV-Chat',
-			description: 'SV-Chat is a chat tool i developed alongside a friend',
+			description: 'SV-Chat er en chat platform som jeg lagde sammen med en venn',
 			image: 'https://i.ibb.co/F4J4XmBK/logo.png',
 			url: 'https://github.com/Redveil-SVchat/SVchat'
 		},
