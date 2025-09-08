@@ -30,7 +30,7 @@
 
 <ModeWatcher />
 <Toaster />
-<body class="font-mono">
+<div class="font-mono">
     <header class="px-4 lg:px-6 h-14 flex items-center">
         <div class="gap-x-3 flex items-center">
             <a class="flex items-center justify-center" href="/">
@@ -60,4 +60,4 @@
         </nav>
     </header>
     <slot />
-</body>
+</div>
